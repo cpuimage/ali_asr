@@ -64,7 +64,7 @@ class AliAsr(object):
             else:
                 return json.loads(resp.text).get("result")
         except Exception:
-            print("ali recognize error: {}".format(traceback.format_exc()))
+            print("ali asr error: {}".format(traceback.format_exc()))
         return "error"
 
     def asr(self, wav_filepath):
